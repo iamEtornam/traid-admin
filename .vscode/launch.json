@@ -10,7 +10,7 @@
             "type": "dart",
             "toolArgs": [
 			"--dart-define",
-			"authToken=MY_VALUE",
+			"authToken=BEARER_TOKEN",
 		]
         },
         {
@@ -30,7 +30,7 @@
             "flutterMode": "release",
             "toolArgs": [
 			"--dart-define",
-			"authToken=MY_VALUE",
+			"authToken=BEARER_TOKEN",
 		]
         }
     ]
