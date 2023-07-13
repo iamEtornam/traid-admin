@@ -11,8 +11,6 @@
             "toolArgs": [
 			"--dart-define",
 			"authToken=MY_VALUE",
-			"--dart-define",
-			"splashAccessKey=MY_OTHER_VALUE"
 		]
         },
         {
@@ -23,8 +21,6 @@
             "toolArgs": [
 			"--dart-define",
 			"authToken=MY_VALUE",
-			"--dart-define",
-			"splashAccessKey=MY_OTHER_VALUE"
 		]
         },
         {
@@ -35,8 +31,6 @@
             "toolArgs": [
 			"--dart-define",
 			"authToken=MY_VALUE",
-			"--dart-define",
-			"splashAccessKey=MY_OTHER_VALUE"
 		]
         }
     ]

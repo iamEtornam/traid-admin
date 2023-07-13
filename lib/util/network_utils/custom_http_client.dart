@@ -15,7 +15,7 @@ class CustomHttpClient {
   }
 
   static Future<Map<String, String>> getHeaders() async {
-    const token = String.fromEnvironment('MY_VAR');
+    const token = String.fromEnvironment('authToken');
     Map<String, String> headers;
     if (token.isEmpty) {
       headers = {"Accept": "application/json", "Content-Type": "application/json"};

@@ -17,16 +17,46 @@ class AdminDashboardView extends StatefulWidget {
 
 class _AdminDashboardViewState extends State<AdminDashboardView> {
   int _currentIndex = 0;
+  List<Map<String, dynamic>> pages = [
+    {
+      'page': const AdminView(),
+      'label': 'My Traiders',
+    },
+    {
+      'page': const NetworkView(),
+      'label': 'My Networks',
+    },
+    {
+      'page': const SettingView(),
+      'label': 'My Settings',
+    },
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: IndexedStack(
-        index: _currentIndex,
-        children: const [
-          AdminView(),
-          NetworkView(),
-          SettingView(),
-        ],
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                pages[_currentIndex]['label'],
+                style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                      fontSize: 32,
+                      fontWeight: FontWeight.w900,
+                    ),
+              ),
+              const SizedBox(height: 16),
+              Expanded(
+                child: IndexedStack(
+                  index: _currentIndex,
+                  children: pages.map<Widget>((e) => e['page']).toList(),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
