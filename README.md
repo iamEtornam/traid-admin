@@ -14,13 +14,13 @@ This is a test project
 
 ## Art
 
-<img src="https://raw.githubusercontent.com/iamEtornam/traid-admin/main/screenshots/main.png" width="100%"  height="50%"/>
+<img src="https://github.com/iamEtornam/traid-admin/blob/main/screenshots/main.png?raw=true" width="100%"  height="50%"/>
 <br>
    
 <tr>
-    <td><img align="left" src="https://raw.githubusercontent.com/iamEtornam/traid-admin/main/screenshots/art_1.png" width="200" height="400"/></td>
-    <td><img src="https://raw.githubusercontent.com/iamEtornam/traid-admin/main/screenshots/art_2.png" width="200" height="400"/></td> 
-    <td><img src="https://raw.githubusercontent.com/iamEtornam/traid-admin/main/screenshots/art_3.png" width="200" height="400"/></td> 
+    <td><img src="https://github.com/iamEtornam/traid-admin/blob/main/screenshots/art_1.png?raw=true" width="200" height="400"/></td>
+    <td><img src="https://github.com/iamEtornam/traid-admin/blob/main/screenshots/art_2.png?raw=true" width="200" height="400"/></td> 
+    <td><img src="https://github.com/iamEtornam/traid-admin/blob/main/screenshots/art_3.png?raw=true" width="200" height="400"/></td> 
 </tr>
 
 ## Getting Started
