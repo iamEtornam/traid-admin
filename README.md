@@ -2,6 +2,7 @@
 
 <p align="center">
 
+[![wakatime](https://wakatime.com/badge/user/7b10be81-8ebd-4223-abbb-5f0b918e7fd4/project/e652733d-7817-4745-8486-d6b55fd99bc8.svg)](https://wakatime.com/badge/user/7b10be81-8ebd-4223-abbb-5f0b918e7fd4/project/e652733d-7817-4745-8486-d6b55fd99bc8)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/iamEtornam/traid-admin/graphs/commit-activity)
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/RegNex/)
 [![ForTheBadge made-with-flutter](https://img.shields.io/badge/flutter-made%20with%20flutter-blue.svg)](https://flutter.dev)
