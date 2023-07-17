@@ -42,10 +42,10 @@ class _AdminDashboardViewState extends State<AdminDashboardView> {
             children: [
               Text(
                 pages[_currentIndex]['label'],
-                style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                      fontSize: 32,
-                      fontWeight: FontWeight.w900,
-                    ),
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyLarge!
+                    .copyWith(fontSize: 32, fontWeight: FontWeight.w700, fontFamily: 'Inter'),
               ),
               const SizedBox(height: 16),
               Expanded(
@@ -61,32 +61,41 @@ class _AdminDashboardViewState extends State<AdminDashboardView> {
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
           onTap: (value) => setState(() => _currentIndex = value),
+          selectedFontSize: 10,
+          selectedIconTheme: IconThemeData(color: TraidColor.irisAccent),
+          selectedItemColor: TraidColor.irisAccent,
+          selectedLabelStyle: const TextStyle(
+            fontSize: 10,
+            fontWeight: FontWeight.w600,
+          ),
+          showSelectedLabels: true,
+          showUnselectedLabels: true,
+          unselectedFontSize: 10,
+          unselectedLabelStyle: const TextStyle(
+            fontSize: 10,
+            fontWeight: FontWeight.w600,
+          ),
           items: [
-            BottomNavigationBarItem(
-                icon: SvgPicture.asset(Svgs.user),
-                activeIcon: SvgPicture.asset(
-                  Svgs.user,
-                  color: TraidColor.irisAccent,
-                ),
-                backgroundColor: TraidColor.irisAccent,
-                label: 'Traiders'),
-            BottomNavigationBarItem(
-                activeIcon: SvgPicture.asset(
-                  Svgs.network,
-                  color: TraidColor.irisAccent,
-                ),
-                icon: SvgPicture.asset(Svgs.network),
-                backgroundColor: TraidColor.irisAccent,
-                label: 'Network'),
-            BottomNavigationBarItem(
-                activeIcon: SvgPicture.asset(
-                  Svgs.setting,
-                  color: TraidColor.irisAccent,
-                ),
-                icon: SvgPicture.asset(Svgs.setting),
-                backgroundColor: TraidColor.irisAccent,
-                label: 'Settings'),
+            _navigationTabs(icon: Svgs.user, label: 'Traiders'),
+            _navigationTabs(icon: Svgs.network, label: 'Network'),
+            _navigationTabs(icon: Svgs.setting, label: 'Settings'),
           ]),
     );
   }
+}
+
+BottomNavigationBarItem _navigationTabs({required String label, required String icon}) {
+  return BottomNavigationBarItem(
+      icon: SvgPicture.asset(
+        icon,
+        width: 24,
+        height: 24,
+      ),
+      activeIcon: SvgPicture.asset(
+        icon,
+        width: 24,
+        height: 24,
+        color: TraidColor.irisAccent,
+      ),
+      label: label);
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:traid_admin/admin_dashboard_view.dart';
 import 'package:traid_admin/components/custom_colors.dart';
 import 'package:traid_admin/features/admin/cubit/admin_cubit.dart';
@@ -17,7 +16,7 @@ class App extends StatelessWidget {
       child: MaterialApp(
         title: 'Traid Admin',
         theme: ThemeData(
-            fontFamily: GoogleFonts.inter().fontFamily,
+            fontFamily: 'Inter',
             colorScheme: ColorScheme.fromSeed(seedColor: TraidColor.irisAccent),
             useMaterial3: true,
             scaffoldBackgroundColor: const Color.fromRGBO(242, 242, 245, 1)),
