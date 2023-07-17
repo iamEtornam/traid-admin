@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:traid_admin/components/custom_colors.dart';
 import 'package:traid_admin/features/admin/cubit/admin_state.dart';
 import 'package:traid_admin/features/admin/view/components/add_new_traider.dart';
-import 'package:traid_admin/features/admin/view/components/traider_listtile_widget.dart';
+import 'package:traid_admin/features/admin/view/components/traider_list_tile_widget.dart';
 
 class TraiderWidget extends StatefulWidget {
   const TraiderWidget({super.key, required this.responseAdminState, required this.images});
@@ -31,6 +31,7 @@ class _TraiderWidgetState extends State<TraiderWidget> {
       {'label': 'Group', 'count': totalGroups},
       {'label': 'Rules', 'count': totalRules},
     ];
+    
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
