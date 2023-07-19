@@ -53,6 +53,7 @@ class TraiderListTileWidget extends StatelessWidget {
                   style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       fontSize: 14, fontWeight: FontWeight.w500, color: TraidColor.greyScale),
                 ),
+                const SizedBox(height: 4),
                 Container(
                   width: 80,
                   height: 26,
